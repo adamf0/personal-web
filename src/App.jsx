@@ -6,7 +6,7 @@ import PortofolioList from "./pages/PortofolioList";
 
 export default function App() {
   return (
-    <Router basename="/personal-web">
+    <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/portofolio/" element={<PortofolioList />} />

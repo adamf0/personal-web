@@ -6,7 +6,7 @@ import path from "path";
 // https://vite.dev/config/
 //<meta http-equiv="refresh" content="0; url=/personal-web-adam/" />
 export default defineConfig({
-  base: "/personal-web",
+  // base: "/personal-web",
   plugins: [react(), tailwindcss(),],
   resolve: {
     alias: {
