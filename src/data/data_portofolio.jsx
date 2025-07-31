@@ -286,6 +286,7 @@ const projects = [
       ],
       details: {
         Type: "Project",
+        From: "Private - Kenalan PUTIK",
         Teams: [
           {
             role: "Backend",
@@ -847,7 +848,7 @@ const projects = [
       ],
       details: {
         Type: "Project",
-        From: "Timur Jaya Motor",
+        From: "Private - Kenalan PT. Gilland Ganesha",
         Teams: [
           {
             role: "Backend",
