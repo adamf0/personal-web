@@ -1,5 +1,6 @@
 import helpdesk_1 from "@src/assets/helpdesk/1.png";
 import helpdesk_2 from "@src/assets/helpdesk/2.png";
+import helpdesk_alur from "@src/assets/helpdesk/alur.png";
 import appointment_1 from "@src/assets/appointment/1.png";
 import appointment_2 from "@src/assets/appointment/2.png";
 import appointment_3 from "@src/assets/appointment/3.png";
@@ -9,12 +10,16 @@ import seb_3 from "@src/assets/seb/3.png";
 import seb_4 from "@src/assets/seb/4.png";
 import seb_5 from "@src/assets/seb/5.png";
 import seb_6 from "@src/assets/seb/6.png";
+import seb_alur from "@src/assets/seb/alur.png";
 import fishiden_1 from "@src/assets/fishiden/1.png";
 import fishiden_2 from "@src/assets/fishiden/2.png";
+import fishiden_alur from "@src/assets/fishiden/alur.png";
 import sipaksi_1 from "@src/assets/sipaksi/1.png";
 import sipaksi_2 from "@src/assets/sipaksi/2.png";
+import sipaksi_alur from "@src/assets/sipaksi/alur.png";
 import siamida_1 from "@src/assets/siamida/1.png";
 import siamida_2 from "@src/assets/siamida/2.png";
+import siamida_alur from "@src/assets/siamida/alur.png";
 import hrportal_1 from "@src/assets/hrportal/1.png";
 import hrportal_2 from "@src/assets/hrportal/2.png";
 import laporppg_1 from "@src/assets/laporppg/1.png";
@@ -32,11 +37,17 @@ import scanmesin_10 from "@src/assets/scanmesin/10.png";
 import scanmesin_11 from "@src/assets/scanmesin/11.png";
 import scanmesin_12 from "@src/assets/scanmesin/12.png";
 import scanmesin_13 from "@src/assets/scanmesin/13.png";
+import scanmesin_alur from "@src/assets/scanmesin/alur.png";
+import NoArch from "@src/assets/NoArchitecture.png";
 import NotFound from "@src/assets/NotFound.png";
 import { SiAndroid, SiAndroidstudio, SiBootstrap, SiCodeigniter, SiCss3, SiDocker, SiDotnet, SiGit, SiGoland, SiJavascript, SiLaravel, SiLogseq, SiMysql, SiPhp, SiPython, SiReact, SiSqlite, SiTailwindcss } from "react-icons/si";
 import { AiFillApi } from "react-icons/ai";
 
 const architecture = [
+  {
+    title: "No Architecture",
+    image: NoArch
+  },
   {
     title: "MVC",
     image: "https://cdn.ozzu.com/uploads/1/post/610491/1/diagram-of-the-mvc-design-pattern.png"
@@ -92,7 +103,9 @@ const projects = [
         History:[
           {
             title: "Analisis Sistem",
-            images: [],
+            images: [
+              helpdesk_alur
+            ],
             type: null
           },
           {
@@ -140,38 +153,6 @@ const projects = [
             title: "Review",
             list: [],
             type: "review"
-          },
-          {
-            title: "Migrasi Teknologi & Arsitektur",
-            tech: [
-              {
-                label: "ASP.NET",
-                icon: <SiDotnet/>
-              },
-              {
-                label: "Mysql",
-                icon: <SiMysql/>
-              },
-              {
-                label: "Tailwind",
-                icon: <SiTailwindcss/>
-              },
-              {
-                label: "React.JS",
-                icon: <SiReact/>
-              },
-              {
-                label: "Seq",
-                icon: null
-              },
-              {
-                label: "Docker",
-                icon: <SiDocker/>
-              },
-            ],
-            architecture: ["Clean Architecture","CQRS","DDD"],
-            type: "architecture",
-            position: "planed"
           },
         ]
       },
@@ -225,7 +206,9 @@ const projects = [
         History:[
           {
             title: "Analisis Sistem",
-            images: [],
+            images: [
+              seb_alur
+            ],
             type: null
           },
           {
@@ -317,7 +300,9 @@ const projects = [
         History:[
           {
             title: "Analisis Sistem",
-            images: [],
+            images: [
+              fishiden_alur
+            ],
             type: null
           },
           {
@@ -500,7 +485,9 @@ const projects = [
         History:[
           {
             title: "Analisis Sistem",
-            images: [],
+            images: [
+              sipaksi_alur
+            ],
             type: null
           },
           {
@@ -553,6 +540,38 @@ const projects = [
             list: [],
             type: "review"
           },
+          {
+            title: "Migrasi Teknologi & Arsitektur",
+            tech: [
+              {
+                label: "ASP.NET",
+                icon: <SiDotnet/>
+              },
+              {
+                label: "Mysql",
+                icon: <SiMysql/>
+              },
+              {
+                label: "Tailwind",
+                icon: <SiTailwindcss/>
+              },
+              {
+                label: "React.JS",
+                icon: <SiReact/>
+              },
+              {
+                label: "Seq",
+                icon: null
+              },
+              {
+                label: "Docker",
+                icon: <SiDocker/>
+              },
+            ],
+            architecture: ["Clean Architecture","CQRS","DDD"],
+            type: "architecture",
+            position: "planed"
+          },  
         ]
       },
     },
@@ -580,19 +599,17 @@ const projects = [
         From: "PUTIK",
         Teams: [
           {
-            role: "Backend",
+            role: "Fullstack",
             total: 1,
             focus: true
-          },
-          {
-            role: "Frontend",
-            total: 1,
           },
         ],
         History:[
           {
             title: "Analisis Sistem",
-            images: [],
+            images: [
+              siamida_alur
+            ],
             type: null
           },
           {
@@ -967,7 +984,9 @@ const projects = [
         History:[
           {
             title: "Analisis Sistem",
-            images: [],
+            images: [
+              scanmesin_alur
+            ],
             type: null
           },
           {
@@ -986,7 +1005,7 @@ const projects = [
                 icon: <SiSqlite/>
               }
             ],
-            architecture: ["MVC"],
+            architecture: ["No Architecture"],
             type: "architecture",
             position: "current"
           },

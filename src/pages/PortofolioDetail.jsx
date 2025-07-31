@@ -115,7 +115,7 @@ export default function PortfolioDetail() {
   function renderCurrentArchitecture(){
     if(listArch.length>=1){
       const info = data_portofolio.getArchitecture(listArch[0]);
-      return <img src={info.image} alt="current architecture" className="h-full mix-blend-multiply" />
+      return <img src={info.image} alt="current architecture" className="w-full h-full mix-blend-multiply" />
     }
 
     return NotFound;
@@ -220,8 +220,8 @@ export default function PortfolioDetail() {
                 {
                   images.length>0? 
                     images.map(image => {
-                      return  <div className="bg-gray-100 h-48 flex items-center justify-center rounded shadow">
-                                <span className="text-gray-500">img flow</span>
+                      return  <div key={uuid()} className="bg-gray-100 h-48 flex items-center justify-center rounded shadow">
+                                <img src={image} className="w-full h-full" alt="alur" />
                               </div>
                     }) : 
                     renderNotFound()
@@ -290,7 +290,7 @@ export default function PortfolioDetail() {
                 <h2 className="text-xl font-semibold text-gray-800 mb-4">
                   Arsitektur
                 </h2>
-                <div className="w-full max-w-md mx-auto bg-gray-100 border border-gray-300 rounded-md shadow-sm h-64 flex items-center justify-center text-gray-500">
+                <div className="w-full max-w-md mx-auto bg-gray-100 border border-gray-300 rounded-md shadow-sm h-96 flex items-center justify-center text-gray-500">
                   {renderCurrentArchitecture()}
                 </div>
               </div>
