@@ -1,6 +1,25 @@
 import ActionButton from "@src/components/ActionButton";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
+  const handleClick = () => {
+    toast.info(
+      <>
+        Fungsi kontak belum tersedia. Silakan hubungi saya melalui Email atau WhatsApp.
+      </>,
+      {
+        position: "bottom-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "light",
+      }
+    );
+  };
+
   return (
     <section className="min-h-screen w-full flex items-center justify-center px-6 lg:px-24 py-20">
       <div className="max-w-7xl w-full">
@@ -61,7 +80,7 @@ export default function Contact() {
             ></textarea>
 
             <div className="text-right">
-              <ActionButton onClick={()=>{}}>Kontak Saya</ActionButton>
+              <ActionButton onClick={handleClick}>Kontak Saya</ActionButton>
             </div>
           </form>
         </div>

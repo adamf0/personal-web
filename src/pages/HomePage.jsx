@@ -8,6 +8,8 @@ import Certificate from "@src/sections/Certificate";
 import Portofolio from "@src/sections/Portofolio";
 import Contact from "@src/sections/Contact";
 import Footer from "@src/sections/Footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function HomePage() {
   return (
@@ -200,6 +202,8 @@ export default function HomePage() {
             <Footer />
           </div>
         </section>
+
+        <ToastContainer />
       </main>
     </>
   );

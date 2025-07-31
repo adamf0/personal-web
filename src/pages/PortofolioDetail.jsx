@@ -102,10 +102,12 @@ export default function PortfolioDetail() {
 
   const data = data_portofolio.projects.find(project => project.id==id)
   const images = (data?.images ?? []).map(img => img.target);
-  const teams = (data?.details?.Teams ?? []);
-  const listArch = (data?.details?.History ?? []).find(history => history.type==="architecture" && history.position==="current")?.architecture;
-  const listTech = (data?.details?.History ?? []).find(history => history.type==="architecture" && history.position==="current")?.tech ?? [];
-  const listHistory = (data?.details?.History ?? []);
+
+  const detail = data?.details;
+  const teams = (detail.Teams ?? []);
+  const listArch = (detail.History ?? []).find(history => history.type==="architecture" && history.position==="current")?.architecture;
+  const listTech = (detail.History ?? []).find(history => history.type==="architecture" && history.position==="current")?.tech ?? [];
+  const listHistory = (detail.History ?? []);
 
   function renderNotFound(message="Belum ada data"){
     return <div className="bg-gray-100 h-48 flex items-center justify-center rounded shadow">
@@ -229,6 +231,26 @@ export default function PortfolioDetail() {
               </div>
             </div>
   }
+  function renderSmallInfo(){
+    if(detail?.Type==null){
+      return;
+    }
+
+    return <>
+        <a
+          href="#"
+          className={`text-green-600 text-sm ${data?.source?.code!==LossData && "underline"} mt-2 inline-block`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="text-black">Git:</span> {data?.source?.code ?? LossData}
+        </a>
+        <br/>
+      <p className="text-green-600 text-sm">
+        <span className="text-black">{(detail?.Type==="Project"? "Project":"Portofolio")}:</span> {detail?.From ?? ""}
+      </p>
+    </>;
+  }
   return (
     <Fragment key={uuid()}>
       <OffCanvasMenu />
@@ -263,14 +285,7 @@ export default function PortfolioDetail() {
                 <p className="text-gray-600">
                   {data?.description ?? NotFound}
                 </p>
-                <a
-                  href="#"
-                  className="text-green-600 text-sm underline mt-2 inline-block"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {data?.source?.code ?? LossData}
-                </a>
+                {renderSmallInfo()}
               </div>
 
               {/* Tim */}

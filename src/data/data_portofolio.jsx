@@ -73,7 +73,7 @@ const projects = [
       tags: "Backend Web",
       description: "Helpdesk IT merupakan aplikasi untuk reporting masalah teknis IT pada divisi lain seperti masalah jaringan internet, pembuatan flayer untuk promosi dan permintaan aplikasi untuk divisi lain. ",
       source:{
-        code: "-",
+        code: "Undocumented",
         website: "https://live.ai.web.id/helpdesk/"
       },
       showInShort:true,
@@ -582,7 +582,7 @@ const projects = [
       tags: "Fullstack",
       description: "SIAMIDA merupakan aplikasi untuk menangani masalah audit internal semua unit dan fakultas",
       source:{
-        code: "-",
+        code: "Undocumented",
         website: "https://siamida.unpak.ac.id/"
       },
       images: [
@@ -668,7 +668,7 @@ const projects = [
       tags: "Fullstack",
       description: "HRPORTAL merupakan aplikasi untuk menangani masalah absensi pegawai dan dosen",
       source:{
-        code: "-",
+        code: "Undocumented",
         website: "https://hrportal.unpak.ac.id/"
       },
       images: [
@@ -752,7 +752,7 @@ const projects = [
       tags: "Fullstack",
       description: "LAPORDIRI-PPG merupakan aplikasi untuk menangani masalah perekapan informasi dosen PPG",
       source:{
-        code: "-",
+        code: "Undocumented",
         website: "https://lapordiri-ppg.unpak.ac.id/"
       },
       images: [
@@ -836,7 +836,7 @@ const projects = [
       tags: "Backend Web",
       description: "Timurjaya merupakan aplikasi untuk menangani masalah service pada bengkel motor",
       source:{
-        code: "-",
+        code: "Undocumented",
         website: "-"
       },
       images: [
@@ -921,7 +921,7 @@ const projects = [
       tags: "Android",
       description: "LaporMesin merupakan aplikasi untuk menangani pelaporan dan monitoring mesin pembuatan ban untuk PT. Indo Kordsa Tbk",
       source:{
-        code: "-",
+        code: "Undocumented",
         website: "-"
       },
       showInShort:true,
