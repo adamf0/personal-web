@@ -18,8 +18,8 @@ function TeamRoleCard({ role, count, isActive }) {
       <div
         className={`text-sm text-gray-800 font-medium px-2 py-1 min-w-[200px] ${
           isActive
-            ? "bg-green-600 text-white rounded-full"
-            : "border border-gray-400 rounded-full"
+            ? "border border-gray-400 rounded-full"
+            : "bg-green-600 text-white rounded-full"
         }`}
       >
         {count} {role}
