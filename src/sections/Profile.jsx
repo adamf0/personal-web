@@ -52,7 +52,7 @@ export default function Profile() {
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4">
               Saya adalah <strong className="font-semibold">Programmer</strong>{" "}
-              dengan pengalaman lebih dari <strong>3 tahun</strong> di bidang{" "}
+              dengan pengalaman <strong>3 tahun</strong> di bidang{" "}
               <strong>pengembangan aplikasi backend web</strong>. Saya terbiasa
               menangani <strong>analisis sistem</strong>,{" "}
               <strong>perancangan database</strong>,{" "}
