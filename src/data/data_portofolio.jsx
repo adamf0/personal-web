@@ -413,8 +413,8 @@ const projects = [
                 icon: <SiPhp/>
               },
               {
-                label: "Codeigniter",
-                icon: <SiCodeigniter/>
+                label: "Laravel",
+                icon: <SiLaravel/>
               },
               {
                 label: "Mysql",
