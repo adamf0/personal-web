@@ -838,7 +838,7 @@ const projects = [
       description: "Timurjaya merupakan aplikasi untuk menangani masalah service pada bengkel motor",
       source:{
         code: "Undocumented",
-        website: "-"
+        website: "Undocumented"
       },
       images: [
         {
@@ -923,7 +923,7 @@ const projects = [
       description: "LaporMesin merupakan aplikasi untuk menangani pelaporan dan monitoring mesin pembuatan ban untuk PT. Indo Kordsa Tbk",
       source:{
         code: "Undocumented",
-        website: "-"
+        website: "Undocumented"
       },
       showInShort:true,
       images: [

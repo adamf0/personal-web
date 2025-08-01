@@ -236,18 +236,19 @@ export default function PortfolioDetail() {
       return;
     }
 
+    console.log(data?.source)
     return <>
-        <a
-          href="#"
-          className={`text-green-600 text-sm ${data?.source?.code!==LossData && "underline"} mt-2 inline-block`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="text-black">Git:</span> {data?.source?.code ?? LossData}
-        </a>
-        <br/>
       <p className="text-green-600 text-sm">
-        <span className="text-black">{(detail?.Type==="Project"? "Project":"Portofolio")}:</span> {detail?.From ?? ""}
+          <span className="text-black">Git:</span> 
+          {data?.source?.code ?? LossData}
+      </p>
+      <p className="text-green-600 text-sm">
+        <span className="text-black">{(detail?.Type=="Project"? "Project":"Portofolio")}:</span> 
+        {detail?.From ?? ""}
+      </p>
+      <p className="text-green-600 text-sm">
+          <span className="text-black">{(data?.category=="Mobile"? "Playstore":"Website")}:</span> 
+          {data?.source?.website ?? LossData} 
       </p>
     </>;
   }

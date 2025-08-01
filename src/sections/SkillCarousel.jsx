@@ -51,12 +51,12 @@ export default function SkillCarousel() {
     {
       title: "HTML",
       icon: <FaHtml5 className="text-orange-500 text-5xl" />,
-      children: ["Bootstrap"],
+      children: [],
     },
     {
       title: "CSS",
       icon: <FaCss3Alt className="text-blue-500 text-5xl" />,
-      children: ["Tailwind"],
+      children: ["Tailwind","Bootstrap"],
     },
     {
       title: "JavaScript",
