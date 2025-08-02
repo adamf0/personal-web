@@ -142,9 +142,9 @@ export default function Portofolio() {
               <p className="text-sm text-gray-400 mb-2">{project.tags}</p>
               <p className="text-gray-600 mb-4 line-clamp-2">
                 {project.description}{" "}
-                <a href="#" className="text-green-600 hover:underline">
+                {/* <a href="#" className="text-green-600 hover:underline">
                   Read more
-                </a>
+                </a> */}
               </p>
 
               <div className="flex gap-4">
