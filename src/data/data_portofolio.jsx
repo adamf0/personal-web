@@ -40,7 +40,7 @@ import scanmesin_13 from "@src/assets/scanmesin/13.png";
 import scanmesin_alur from "@src/assets/scanmesin/alur.png";
 import NoArch from "@src/assets/NoArchitecture.png";
 import NotFound from "@src/assets/NotFound.png";
-import { SiAndroid, SiAndroidstudio, SiBootstrap, SiCodeigniter, SiCss3, SiDocker, SiDotnet, SiGit, SiGoland, SiJavascript, SiLaravel, SiLogseq, SiMysql, SiPhp, SiPython, SiReact, SiSqlite, SiTailwindcss } from "react-icons/si";
+import { SiAndroid, SiAndroidstudio, SiBootstrap, SiCodeigniter, SiCss3, SiDocker, SiDotnet, SiFlutter, SiGit, SiGo, SiGoland, SiJavascript, SiLaravel, SiLogseq, SiMysql, SiPhp, SiPython, SiReact, SiSqlite, SiTailwindcss } from "react-icons/si";
 import { AiFillApi } from "react-icons/ai";
 
 const architecture = [
@@ -538,7 +538,23 @@ const projects = [
           },
           {
             title: "Review",
-            list: [],
+            list: [
+              {
+              title: "RCE Vuln",
+              description: <div className="flex flex-col gap-2">
+                <p>terjadi celah keamanan pada file upload</p>
+                <p>status: <span className="bg-red-400 text-[10px] px-2 py-1 rounded">close</span></p>
+              </div>
+              },
+              {
+              title: "IDOR Vuln",
+              description: <div className="flex flex-col gap-2">
+                <p>terjadi celah keamanan pada rule bisnis</p>
+                <p>status: <span className="bg-orange-400 text-[10px] px-2 py-1 rounded">waiting approval migration</span></p>
+                <p>solution: migrasi kode dari web ke mobile mengingat perilaku pengguna lebih aktif menggunkan ponsel</p>
+              </div>
+              },
+            ],
             type: "review"
           },
           {
@@ -553,12 +569,12 @@ const projects = [
                 icon: <SiMysql/>
               },
               {
-                label: "Tailwind",
-                icon: <SiTailwindcss/>
+                label: "Flutter",
+                icon: <SiFlutter/>
               },
               {
-                label: "React.JS",
-                icon: <SiReact/>
+                label: "Git",
+                icon: <SiGit/>
               },
               {
                 label: "Seq",
@@ -570,8 +586,9 @@ const projects = [
               },
             ],
             architecture: ["Clean Architecture","CQRS","DDD"],
+            link: ["https://github.com/adamf0/UnpakSipaksi","https://github.com/adamf0/sipaksi-mobile"],
             type: "architecture",
-            position: "planed"
+            position: "prototype"
           },  
         ]
       },
@@ -656,8 +673,50 @@ const projects = [
           },
           {
             title: "Review",
-            list: [],
+            list: [
+              {
+              title: "IDOR Vuln",
+              description: <div className="flex flex-col gap-2">
+                <p>terjadi celah keamanan pada rule bisnis</p>
+                <p>status: <span className="bg-orange-400 text-[10px] px-2 py-1 rounded">process migration</span></p>
+                <p>solution: migrasi kode ke lebih ringan (Golang), memperkuat rule bisnis & RBAC, monitoring, logging & sistem recovery setelah insiden</p>
+              </div>
+              },
+            ],
             type: "review"
+          },
+          {
+            title: "Migrasi Teknologi & Architecture",
+            tech: [
+              {
+                label: "Golang",
+                icon: <SiGo/>
+              },
+              {
+                label: "Mysql",
+                icon: <SiMysql/>
+              },
+              {
+                label: "Tailwind",
+                icon: <SiTailwindcss/>
+              },
+              {
+                label: "React.JS",
+                icon: <SiReact/>
+              },
+              {
+                label: "Git",
+                icon: <SiGit/>
+              },
+              {
+                label: "Rest Api",
+                icon: <AiFillApi />
+              },
+            ],
+            architecture: ["Clean Architecture", "DDD", "CQRS"],
+            link: ["https://github.com/adamf0/UnpakSiamidaFrontend","https://github.com/adamf0/UnpakSiamidaV2"],
+            type: "architecture",
+            position: "prototype"
           },
         ]
       },
