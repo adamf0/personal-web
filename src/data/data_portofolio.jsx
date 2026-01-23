@@ -146,7 +146,7 @@ const projects = [
           },
           {
             title: "Temuan / Bug",
-            images: [],
+            list: [],
             type: "bug"
           },
           {
@@ -253,7 +253,7 @@ const projects = [
           },
           {
             title: "Temuan / Bug",
-            images: [],
+            list: [],
             type: "bug"
           },
           {
@@ -352,7 +352,7 @@ const projects = [
           },
           {
             title: "Temuan / Bug",
-            images: [],
+            list: [],
             type: "bug"
           },
           {
@@ -443,7 +443,7 @@ const projects = [
           },
           {
             title: "Temuan / Bug",
-            images: [],
+            list: [],
             type: "bug"
           },
           {
@@ -533,11 +533,6 @@ const projects = [
           },
           {
             title: "Temuan / Bug",
-            images: [],
-            type: "bug"
-          },
-          {
-            title: "Review",
             list: [
               {
               title: "RCE Vuln",
@@ -550,8 +545,20 @@ const projects = [
               title: "IDOR Vuln",
               description: <div className="flex flex-col gap-2">
                 <p>terjadi celah keamanan pada rule bisnis</p>
+                <p>status: <span className="bg-green-400 text-[10px] px-2 py-1 rounded">open</span></p>
+              </div>
+              },
+            ],
+            type: "bug"
+          },
+          {
+            title: "Review",
+            list: [
+              {
+              title: "Migrasi Teknologi",
+              description: <div className="flex flex-col gap-2">
+                <p>dikarenakan perilaku pengguna lebih aktif menggunakan ponsel maka perlu migrasi teknologi ke Flutter dan NET Core 8. perbaikan ini akan mempertajam bagian rule bisnis sekaligus RBAC dan nest development akan menerapkan SSO menggunakkan Google LDAP</p>
                 <p>status: <span className="bg-orange-400 text-[10px] px-2 py-1 rounded">waiting approval migration</span></p>
-                <p>solution: migrasi kode dari web ke mobile mengingat perilaku pengguna lebih aktif menggunkan ponsel</p>
               </div>
               },
             ],
@@ -668,18 +675,32 @@ const projects = [
           },
           {
             title: "Temuan / Bug",
-            images: [],
+            list: [
+              {
+              title: "RCE Vuln",
+              description: <div className="flex flex-col gap-2">
+                <p>terjadi celah keamanan pada file upload</p>
+                <p>status: <span className="bg-red-400 text-[10px] px-2 py-1 rounded">close</span></p>
+              </div>
+              },
+              {
+              title: "IDOR Vuln",
+              description: <div className="flex flex-col gap-2">
+                <p>terjadi celah keamanan pada rule bisnis</p>
+                <p>status: <span className="bg-red-400 text-[10px] px-2 py-1 rounded">close</span></p>
+              </div>
+              },
+            ],
             type: "bug"
           },
           {
             title: "Review",
             list: [
               {
-              title: "IDOR Vuln",
+              title: "Migrasi Teknologi",
               description: <div className="flex flex-col gap-2">
-                <p>terjadi celah keamanan pada rule bisnis</p>
-                <p>status: <span className="bg-orange-400 text-[10px] px-2 py-1 rounded">process migration</span></p>
-                <p>solution: migrasi kode ke lebih ringan (Golang), memperkuat rule bisnis & RBAC, monitoring, logging & sistem recovery setelah insiden</p>
+                <p>migrasi kode ke lebih ringan (Golang), memperkuat rule bisnis & RBAC, monitoring, logging & sistem recovery setelah insiden</p>
+                <p>status: <span className="bg-green-400 text-[10px] px-2 py-1 rounded">process migration</span></p>
               </div>
               },
             ],
@@ -794,7 +815,7 @@ const projects = [
           },
           {
             title: "Temuan / Bug",
-            images: [],
+            list: [],
             type: "bug"
           },
           {
@@ -878,7 +899,7 @@ const projects = [
           },
           {
             title: "Temuan / Bug",
-            images: [],
+            list: [],
             type: "bug"
           },
           {
@@ -963,7 +984,7 @@ const projects = [
           },
           {
             title: "Temuan / Bug",
-            images: [],
+            list: [],
             type: "bug"
           },
           {
@@ -1071,7 +1092,7 @@ const projects = [
           },
           {
             title: "Temuan / Bug",
-            images: [],
+            list: [],
             type: "bug"
           },
           {

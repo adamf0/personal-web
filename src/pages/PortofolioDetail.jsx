@@ -101,6 +101,7 @@ export default function PortfolioDetail() {
   const { id } = useParams();
   const accordionRefs = useRef({});
   const [openReview, setOpenReview] = useState(null);
+  const [openBug, setOpenBug] = useState(null);
 
   const data = data_portofolio.projects.find((project) => project.id == id);
   const images = (data?.images ?? []).map((img) => img.target);
@@ -220,12 +221,42 @@ export default function PortfolioDetail() {
         </div>
       );
     } else if (history.type == "bug") {
+      const listBug = history?.list ?? [];
+
       return (
         <div key={uuid()}>
           <h3 className="text-lg font-semibold mb-4 text-gray-700">
             {history?.title ?? ""}
           </h3>
-          {renderNotFound()}
+          {listBug.length > 0 ? (
+            <div className="w-full flex flex-col border rounded-2xl overflow-y-auto lg:max-h-[600px]">
+              {listBug.map((l, index) => (
+                <div
+                  key={index}
+                  ref={(el) => (accordionRefs.current[index] = el)}
+                  className="border-b"
+                >
+                  <button
+                    className={`w-full text-left px-4 py-3 font-semibold ${
+                      openBug === index ? "text-green-600" : "text-gray-700"
+                    }`}
+                    onClick={() =>
+                      setOpenBug((prev) => (prev === index ? null : index))
+                    }
+                  >
+                    {l.title}
+                  </button>
+                  {openBug === index && (
+                    <div className="px-4 pb-4 text-sm text-gray-700">
+                      {l.description}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : (
+            renderNotFound()
+          )}
         </div>
       );
     } else if (history.type == "review") {
