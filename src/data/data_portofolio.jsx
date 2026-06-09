@@ -17,6 +17,15 @@ import fishiden_alur from "@src/assets/fishiden/alur.png";
 import sipaksi_1 from "@src/assets/sipaksi/1.png";
 import sipaksi_2 from "@src/assets/sipaksi/2.png";
 import sipaksi_alur from "@src/assets/sipaksi/alur.png";
+import simonev_1 from "@src/assets/simonev/1.png";
+import simonev_2 from "@src/assets/simonev/2.png";
+import simonev_new_1 from "@src/assets/simonev/simonev_new_1.png";
+import simonev_new_2 from "@src/assets/simonev/simonev_new_2.png";
+import simonev_new_3 from "@src/assets/simonev/simonev_new_3.png";
+import simonev_new_4 from "@src/assets/simonev/simonev_new_4.png";
+import simonev_new_5 from "@src/assets/simonev/simonev_new_5.png";
+import simonev_new_6 from "@src/assets/simonev/simonev_new_6.png";
+// import simonev_alur from "@src/assets/simonev/alur.png";
 import siamida_1 from "@src/assets/siamida/1.png";
 import siamida_2 from "@src/assets/siamida/2.png";
 import siamida_alur from "@src/assets/siamida/alur.png";
@@ -40,1074 +49,1343 @@ import scanmesin_13 from "@src/assets/scanmesin/13.png";
 import scanmesin_alur from "@src/assets/scanmesin/alur.png";
 import NoArch from "@src/assets/NoArchitecture.png";
 import NotFound from "@src/assets/NotFound.png";
-import { SiAndroid, SiAndroidstudio, SiBootstrap, SiCodeigniter, SiCss3, SiDocker, SiDotnet, SiFlutter, SiGit, SiGo, SiGoland, SiJavascript, SiLaravel, SiLogseq, SiMysql, SiPhp, SiPython, SiReact, SiSqlite, SiTailwindcss } from "react-icons/si";
+import {
+  SiAndroid,
+  SiAndroidstudio,
+  SiBootstrap,
+  SiCodeigniter,
+  SiCss3,
+  SiDocker,
+  SiDotnet,
+  SiFlutter,
+  SiGit,
+  SiGo,
+  SiGoland,
+  SiJavascript,
+  SiLaravel,
+  SiLogseq,
+  SiMysql,
+  SiNextdotjs,
+  SiPhp,
+  SiPython,
+  SiReact,
+  SiSqlite,
+  SiTailwindcss,
+} from "react-icons/si";
 import { AiFillApi } from "react-icons/ai";
 
 const architecture = [
   {
     title: "No Architecture",
-    image: NoArch
+    image: NoArch,
   },
   {
     title: "MVC",
-    image: "https://cdn.ozzu.com/uploads/1/post/610491/1/diagram-of-the-mvc-design-pattern.png"
+    image:
+      "https://cdn.ozzu.com/uploads/1/post/610491/1/diagram-of-the-mvc-design-pattern.png",
   },
   {
     title: "Clean Architecture",
-    image: "https://substackcdn.com/image/fetch/$s_!55Wm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F40cb8f80-601f-4364-a5a0-a34db7a96c26_2250x2814.png"
+    image:
+      "https://substackcdn.com/image/fetch/$s_!55Wm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F40cb8f80-601f-4364-a5a0-a34db7a96c26_2250x2814.png",
   },
   {
     title: "CQRS",
-    image: "https://miro.medium.com/v2/resize:fit:875/1*sDOCS6W0SxsNRS5KlQoYgQ.png"
+    image:
+      "https://miro.medium.com/v2/resize:fit:875/1*sDOCS6W0SxsNRS5KlQoYgQ.png",
   },
   {
     title: "DDD",
-    image: "https://miro.medium.com/v2/resize:fit:1400/1*hM-D6VPybtpA91-TzOwMAg.jpeg"
+    image:
+      "https://miro.medium.com/v2/resize:fit:1400/1*hM-D6VPybtpA91-TzOwMAg.jpeg",
   },
 ];
 const projects = [
-    {
-      id: 1,
-      title: "Helpdesk",
-      category: "Web",
-      tags: "Backend Web",
-      description: "Helpdesk IT merupakan aplikasi untuk reporting masalah teknis IT pada divisi lain seperti masalah jaringan internet, pembuatan flayer untuk promosi dan permintaan aplikasi untuk divisi lain. ",
-      source:{
-        code: "Undocumented",
-        website: "https://live.ai.web.id/helpdesk/"
-      },
-      showInShort:true,
-      images: [
-        {
-          target: helpdesk_1,
-          placeholder: true
-        },
-        {
-          target: helpdesk_2,
-        },
-      ],
-      details: {
-        Type: "Portofolio",
-        From: "PT Gilland Ganesha",
-        Teams: [
-          {
-            role: "Backend",
-            total: 1,
-            focus: true
-          },
-          {
-            role: "Frontend",
-            total: 1,
-          },
-        ],
-        History:[
-          {
-            title: "Analisis Sistem",
-            images: [
-              helpdesk_alur
-            ],
-            type: null
-          },
-          {
-            title: "Inisialisasi Teknologi",
-            tech: [
-              {
-                label: "PHP",
-                icon: <SiPhp/>
-              },
-              {
-                label: "Codeigniter 3",
-                icon: <SiCodeigniter/>
-              },
-              {
-                label: "Mysql",
-                icon: <SiMysql/>
-              },
-              {
-                label: "Bootstrap",
-                icon: <SiBootstrap/>
-              },
-              {
-                label: "Javascript",
-                icon: <SiJavascript/>
-              },
-              {
-                label: "Git",
-                icon: <SiGit/>
-              },
-              {
-                label: "Rest Api",
-                icon: <AiFillApi />
-              },
-            ],
-            architecture: ["MVC"],
-            type: "architecture",
-            position: "current"
-          },
-          {
-            title: "Temuan / Bug",
-            list: [],
-            type: "bug"
-          },
-          {
-            title: "Review",
-            list: [],
-            type: "review"
-          },
-        ]
-      },
+  {
+    id: 1,
+    title: "Helpdesk",
+    category: "Web",
+    tags: "Backend Web",
+    description:
+      "Helpdesk IT merupakan aplikasi untuk reporting masalah teknis IT pada divisi lain seperti masalah jaringan internet, pembuatan flayer untuk promosi dan permintaan aplikasi untuk divisi lain. ",
+    source: {
+      code: "Undocumented",
+      website: "https://live.ai.web.id/helpdesk/",
     },
-    {
-      id: 2,
-      title: "SEB",
-      category: "Web",
-      tags: "Web Backend",
-      description: "SEB merupakan aplikasi untuk menangani masalah ujian online dalam penerimaan mahasiswa baru",
-      source:{
-        code: "https://github.com/adamf0/UnpakCbt",
-        website: "https://seb.unpak.ac.id"
+    showInShort: true,
+    images: [
+      {
+        target: helpdesk_1,
+        placeholder: true,
       },
-      showInShort:true,
-      images: [
+      {
+        target: helpdesk_2,
+      },
+    ],
+    details: {
+      Type: "Portofolio",
+      From: "PT Gilland Ganesha",
+      Teams: [
         {
-          target: seb_1,
+          role: "Backend",
+          total: 1,
+          focus: true,
         },
         {
-          target: seb_2,
-        },
-        {
-          target: seb_3,
-        },
-        {
-          target: seb_4,
-          placeholder: true
-        },
-        {
-          target: seb_5,
-        },
-        {
-          target: seb_6,
+          role: "Frontend",
+          total: 1,
         },
       ],
-      details: {
-        Type: "Portofolio",
-        From: "PUTIK",
-        Teams: [
-          {
-            role: "Backend",
-            total: 1,
-            focus: true
-          },
-          {
-            role: "Frontend",
-            total: 1,
-          },
-        ],
-        History:[
-          {
-            title: "Analisis Sistem",
-            images: [
-              seb_alur
-            ],
-            type: null
-          },
-          {
-            title: "Inisialisasi Teknologi",
-            tech: [
-              {
-                label: "ASP.NET",
-                icon: <SiDotnet/>
-              },
-              {
-                label: "Mysql",
-                icon: <SiMysql/>
-              },
-              {
-                label: "Tailwind",
-                icon: <SiTailwindcss/>
-              },
-              {
-                label: "Git",
-                icon: <SiGit/>
-              },
-              {
-                label: "Rest Api",
-                icon: <AiFillApi />
-              },
-              {
-                label: "Docker",
-                icon: <SiDocker />
-              },
-              {
-                label: "React.JS",
-                icon: <SiReact />
-              },
-              {
-                label: "Seq",
-                icon: null
-              },
-            ],
-            architecture: ["Clean Architecture","CQRS","DDD"],
-            type: "architecture",
-            position: "current"
-          },
-          {
-            title: "Temuan / Bug",
-            list: [],
-            type: "bug"
-          },
-          {
-            title: "Review",
-            list: [],
-            type: "review"
-          },
-        ]
-      },
+      History: [
+        {
+          title: "Analisis Sistem",
+          images: [helpdesk_alur],
+          type: null,
+        },
+        {
+          title: "Inisialisasi Teknologi",
+          tech: [
+            {
+              label: "PHP",
+              icon: <SiPhp />,
+            },
+            {
+              label: "Codeigniter 3",
+              icon: <SiCodeigniter />,
+            },
+            {
+              label: "Mysql",
+              icon: <SiMysql />,
+            },
+            {
+              label: "Bootstrap",
+              icon: <SiBootstrap />,
+            },
+            {
+              label: "Javascript",
+              icon: <SiJavascript />,
+            },
+            {
+              label: "Git",
+              icon: <SiGit />,
+            },
+            {
+              label: "Rest Api",
+              icon: <AiFillApi />,
+            },
+          ],
+          architecture: ["MVC"],
+          type: "architecture",
+          position: "current",
+        },
+        {
+          title: "Temuan / Bug",
+          list: [],
+          type: "bug",
+        },
+        {
+          title: "Review",
+          list: [],
+          type: "review",
+        },
+      ],
     },
-    {
-      id: 3,
-      title: "Fishiden",
-      category: "Web",
-      tags: "Fullstack",
-      description: "Fishiden adalah sistem inovatif yang menggunakan AI untuk mengidentifikasi dan mengklasifikasi ikan air tawar dan air laut asli Indonesia. Selain itu, Fishiden memberikan informasi status dan upaya konservasi serta menyajikan data genom setiap species teridentifikasi yang bisa digunakan dalam proses pembelajaran.",
-      source:{
-        code: "https://github.com/adamf0/repository-ikan-yolov7",
-        website: "http://www.fishiden.com/"
-      },
-      showInShort:true,
-      images: [
-        {
-          target: fishiden_1,
-          placeholder: true
-        },
-        {
-          target: fishiden_2,
-        },
-      ],
-      details: {
-        Type: "Project",
-        From: "Private - Kenalan PUTIK",
-        Teams: [
-          {
-            role: "Backend",
-            total: 1,
-            focus: true
-          },
-          {
-            role: "Frontend",
-            total: 1,
-          },
-        ],
-        History:[
-          {
-            title: "Analisis Sistem",
-            images: [
-              fishiden_alur
-            ],
-            type: null
-          },
-          {
-            title: "Inisialisasi Teknologi",
-            tech: [
-              {
-                label: "Python",
-                icon: <SiPython/>
-              },
-              {
-                label: "PHP",
-                icon: <SiPhp/>
-              },
-              {
-                label: "Laravel",
-                icon: <SiLaravel/>
-              },
-              {
-                label: "CSS",
-                icon: <SiCss3/>
-              },
-              {
-                label: "Bootstrap",
-                icon: <SiBootstrap/>
-              },
-              {
-                label: "Javascript",
-                icon: <SiJavascript/>
-              },
-              {
-                label: "Mysql",
-                icon: <SiMysql/>
-              },
-              {
-                label: "Git",
-                icon: <SiGit/>
-              },
-              {
-                label: "Rest Api",
-                icon: <AiFillApi />
-              },
-            ],
-            architecture: ["MVC"],
-            type: "architecture",
-            position: "current"
-          },
-          {
-            title: "Temuan / Bug",
-            list: [],
-            type: "bug"
-          },
-          {
-            title: "Review",
-            list: [],
-            type: "review"
-          },
-        ]
-      },
+  },
+  {
+    id: 2,
+    title: "SEB",
+    category: "Web",
+    tags: "Web Backend",
+    description:
+      "SEB merupakan aplikasi untuk menangani masalah ujian online dalam penerimaan mahasiswa baru",
+    source: {
+      code: "https://github.com/adamf0/UnpakCbt",
+      website: "https://seb.unpak.ac.id",
     },
-    {
-      id: 4,
-      title: "Appointment",
-      category: "Web",
-      tags: "Web Backend",
-      description: "Appointment merupakan aplikasi untuk menangani masalah penjadwalan pada semua divisi.",
-      source:{
-        code: "https://github.com/adamf0/ticket",
-        website: "https://live.ai.web.id/helpdesk/"
+    showInShort: true,
+    images: [
+      {
+        target: seb_1,
       },
-      images: [
+      {
+        target: seb_2,
+      },
+      {
+        target: seb_3,
+      },
+      {
+        target: seb_4,
+        placeholder: true,
+      },
+      {
+        target: seb_5,
+      },
+      {
+        target: seb_6,
+      },
+    ],
+    details: {
+      Type: "Portofolio",
+      From: "PUTIK",
+      Teams: [
         {
-          target: appointment_1,
-          placeholder: true
+          role: "Backend",
+          total: 1,
+          focus: true,
         },
         {
-          target: appointment_2,
-        },
-        {
-          target: appointment_3,
+          role: "Frontend",
+          total: 1,
         },
       ],
-      details: {
-        Type: "Portofolio",
-        From: "PT Gilland Ganesha",
-        Teams: [
-          {
-            role: "Backend",
-            total: 1,
-            focus: true
-          },
-          {
-            role: "Frontend",
-            total: 1,
-          },
-        ],
-        History:[
-          {
-            title: "Analisis Sistem",
-            images: [],
-            type: null
-          },
-          {
-            title: "Inisialisasi Teknologi",
-            tech: [
-              {
-                label: "PHP",
-                icon: <SiPhp/>
-              },
-              {
-                label: "Laravel",
-                icon: <SiLaravel/>
-              },
-              {
-                label: "Mysql",
-                icon: <SiMysql/>
-              },
-              {
-                label: "Bootstrap",
-                icon: <SiBootstrap/>
-              },
-              {
-                label: "Javascript",
-                icon: <SiJavascript/>
-              },
-              {
-                label: "Git",
-                icon: <SiGit/>
-              },
-              {
-                label: "Rest Api",
-                icon: <AiFillApi />
-              },
-            ],
-            architecture: ["MVC"],
-            type: "architecture",
-            position: "current"
-          },
-          {
-            title: "Temuan / Bug",
-            list: [],
-            type: "bug"
-          },
-          {
-            title: "Review",
-            list: [],
-            type: "review"
-          },
-        ]
-      },
+      History: [
+        {
+          title: "Analisis Sistem",
+          images: [seb_alur],
+          type: null,
+        },
+        {
+          title: "Inisialisasi Teknologi",
+          tech: [
+            {
+              label: "ASP.NET",
+              icon: <SiDotnet />,
+            },
+            {
+              label: "Mysql",
+              icon: <SiMysql />,
+            },
+            {
+              label: "Tailwind",
+              icon: <SiTailwindcss />,
+            },
+            {
+              label: "Git",
+              icon: <SiGit />,
+            },
+            {
+              label: "Rest Api",
+              icon: <AiFillApi />,
+            },
+            {
+              label: "Docker",
+              icon: <SiDocker />,
+            },
+            {
+              label: "React.JS",
+              icon: <SiReact />,
+            },
+            {
+              label: "Seq",
+              icon: null,
+            },
+          ],
+          architecture: ["Clean Architecture", "CQRS", "DDD"],
+          type: "architecture",
+          position: "current",
+        },
+        {
+          title: "Temuan / Bug",
+          list: [],
+          type: "bug",
+        },
+        {
+          title: "Review",
+          list: [],
+          type: "review",
+        },
+      ],
     },
-    {
-      id: 5,
-      title: "Sipaksi",
-      category: "Web",
-      tags: "Fullstack",
-      description: "SIPAKSI merupakan aplikasi untuk menangani masalah monitoring dan pembiayaan penelitian dosen baik hibah internal, nasional dan internasional",
-      source:{
-        code: "https://github.com/adamf0/UnpakSipaksiOld",
-        website: "https://sipaksi.unpak.ac.id/"
+  },
+  {
+    id: 3,
+    title: "Fishiden",
+    category: "Web",
+    tags: "Fullstack",
+    description:
+      "Fishiden adalah sistem inovatif yang menggunakan AI untuk mengidentifikasi dan mengklasifikasi ikan air tawar dan air laut asli Indonesia. Selain itu, Fishiden memberikan informasi status dan upaya konservasi serta menyajikan data genom setiap species teridentifikasi yang bisa digunakan dalam proses pembelajaran.",
+    source: {
+      code: "https://github.com/adamf0/repository-ikan-yolov7",
+      website: "http://www.fishiden.com/",
+    },
+    showInShort: true,
+    images: [
+      {
+        target: fishiden_1,
+        placeholder: true,
       },
-      images: [
+      {
+        target: fishiden_2,
+      },
+    ],
+    details: {
+      Type: "Project",
+      From: "Private - Kenalan PUTIK",
+      Teams: [
         {
-          target: sipaksi_1,
-          placeholder: true
+          role: "Backend",
+          total: 1,
+          focus: true,
         },
         {
-          target: sipaksi_2,
+          role: "Frontend",
+          total: 1,
         },
       ],
-      details: {
-        Type: "Portofolio",
-        From: "PUTIK",
-        Teams: [
-          {
-            role: "Fullstack",
-            total: 1,
-            focus: true
-          },
-        ],
-        History:[
-          {
-            title: "Analisis Sistem",
-            images: [
-              sipaksi_alur
-            ],
-            type: null
-          },
-          {
-            title: "Inisialisasi Teknologi",
-            tech: [
-              {
-                label: "PHP",
-                icon: <SiPhp/>
-              },
-              {
-                label: "Laravel",
-                icon: <SiLaravel/>
-              },
-              {
-                label: "Python",
-                icon: <SiPython/>
-              },
-              {
-                label: "Mysql",
-                icon: <SiMysql/>
-              },
-              {
-                label: "Bootstrap",
-                icon: <SiBootstrap/>
-              },
-              {
-                label: "Javascript",
-                icon: <SiJavascript/>
-              },
-              {
-                label: "Git",
-                icon: <SiGit/>
-              },
-              {
-                label: "Rest Api",
-                icon: <AiFillApi />
-              },
-            ],
-            architecture: ["MVC"],
-            type: "architecture",
-            position: "current"
-          },
-          {
-            title: "Temuan / Bug",
-            list: [
-              {
+      History: [
+        {
+          title: "Analisis Sistem",
+          images: [fishiden_alur],
+          type: null,
+        },
+        {
+          title: "Inisialisasi Teknologi",
+          tech: [
+            {
+              label: "Python",
+              icon: <SiPython />,
+            },
+            {
+              label: "PHP",
+              icon: <SiPhp />,
+            },
+            {
+              label: "Laravel",
+              icon: <SiLaravel />,
+            },
+            {
+              label: "CSS",
+              icon: <SiCss3 />,
+            },
+            {
+              label: "Bootstrap",
+              icon: <SiBootstrap />,
+            },
+            {
+              label: "Javascript",
+              icon: <SiJavascript />,
+            },
+            {
+              label: "Mysql",
+              icon: <SiMysql />,
+            },
+            {
+              label: "Git",
+              icon: <SiGit />,
+            },
+            {
+              label: "Rest Api",
+              icon: <AiFillApi />,
+            },
+          ],
+          architecture: ["MVC"],
+          type: "architecture",
+          position: "current",
+        },
+        {
+          title: "Temuan / Bug",
+          list: [],
+          type: "bug",
+        },
+        {
+          title: "Review",
+          list: [],
+          type: "review",
+        },
+      ],
+    },
+  },
+  {
+    id: 4,
+    title: "Appointment",
+    category: "Web",
+    tags: "Web Backend",
+    description:
+      "Appointment merupakan aplikasi untuk menangani masalah penjadwalan pada semua divisi.",
+    source: {
+      code: "https://github.com/adamf0/ticket",
+      website: "https://live.ai.web.id/helpdesk/",
+    },
+    images: [
+      {
+        target: appointment_1,
+        placeholder: true,
+      },
+      {
+        target: appointment_2,
+      },
+      {
+        target: appointment_3,
+      },
+    ],
+    details: {
+      Type: "Portofolio",
+      From: "PT Gilland Ganesha",
+      Teams: [
+        {
+          role: "Backend",
+          total: 1,
+          focus: true,
+        },
+        {
+          role: "Frontend",
+          total: 1,
+        },
+      ],
+      History: [
+        {
+          title: "Analisis Sistem",
+          images: [],
+          type: null,
+        },
+        {
+          title: "Inisialisasi Teknologi",
+          tech: [
+            {
+              label: "PHP",
+              icon: <SiPhp />,
+            },
+            {
+              label: "Laravel",
+              icon: <SiLaravel />,
+            },
+            {
+              label: "Mysql",
+              icon: <SiMysql />,
+            },
+            {
+              label: "Bootstrap",
+              icon: <SiBootstrap />,
+            },
+            {
+              label: "Javascript",
+              icon: <SiJavascript />,
+            },
+            {
+              label: "Git",
+              icon: <SiGit />,
+            },
+            {
+              label: "Rest Api",
+              icon: <AiFillApi />,
+            },
+          ],
+          architecture: ["MVC"],
+          type: "architecture",
+          position: "current",
+        },
+        {
+          title: "Temuan / Bug",
+          list: [],
+          type: "bug",
+        },
+        {
+          title: "Review",
+          list: [],
+          type: "review",
+        },
+      ],
+    },
+  },
+  {
+    id: 5,
+    title: "Sipaksi",
+    category: "Web",
+    tags: "Fullstack",
+    description:
+      "SIPAKSI merupakan aplikasi untuk menangani masalah monitoring dan pembiayaan penelitian dosen baik hibah internal, nasional dan internasional",
+    source: {
+      code: "https://github.com/adamf0/UnpakSipaksiOld",
+      website: "https://sipaksi.unpak.ac.id/",
+    },
+    images: [
+      {
+        target: sipaksi_1,
+        placeholder: true,
+      },
+      {
+        target: sipaksi_2,
+      },
+    ],
+    details: {
+      Type: "Portofolio",
+      From: "PUTIK",
+      Teams: [
+        {
+          role: "Fullstack",
+          total: 1,
+          focus: true,
+        },
+      ],
+      History: [
+        {
+          title: "Analisis Sistem",
+          images: [sipaksi_alur],
+          type: null,
+        },
+        {
+          title: "Inisialisasi Teknologi",
+          tech: [
+            {
+              label: "PHP",
+              icon: <SiPhp />,
+            },
+            {
+              label: "Laravel",
+              icon: <SiLaravel />,
+            },
+            {
+              label: "Python",
+              icon: <SiPython />,
+            },
+            {
+              label: "Mysql",
+              icon: <SiMysql />,
+            },
+            {
+              label: "Bootstrap",
+              icon: <SiBootstrap />,
+            },
+            {
+              label: "Javascript",
+              icon: <SiJavascript />,
+            },
+            {
+              label: "Git",
+              icon: <SiGit />,
+            },
+            {
+              label: "Rest Api",
+              icon: <AiFillApi />,
+            },
+          ],
+          architecture: ["MVC"],
+          type: "architecture",
+          position: "current",
+        },
+        {
+          title: "Temuan / Bug",
+          list: [
+            {
               title: "RCE Vuln",
-              description: <div className="flex flex-col gap-2">
-                <p>terjadi celah keamanan pada file upload</p>
-                <p>status: <span className="bg-red-400 text-[10px] px-2 py-1 rounded">close</span></p>
-              </div>
-              },
-              {
+              description: (
+                <div className="flex flex-col gap-2">
+                  <p>terjadi celah keamanan pada file upload</p>
+                  <p>
+                    status:{" "}
+                    <span className="bg-red-400 text-[10px] px-2 py-1 rounded">
+                      close
+                    </span>
+                  </p>
+                </div>
+              ),
+            },
+            {
               title: "IDOR Vuln",
-              description: <div className="flex flex-col gap-2">
-                <p>terjadi celah keamanan pada rule bisnis</p>
-                <p>status: <span className="bg-green-400 text-[10px] px-2 py-1 rounded">open</span></p>
-              </div>
-              },
-            ],
-            type: "bug"
-          },
-          {
-            title: "Review",
-            list: [
-              {
-              title: "Migrasi Teknologi",
-              description: <div className="flex flex-col gap-2">
-                <p>dikarenakan perilaku pengguna lebih aktif menggunakan ponsel maka perlu migrasi teknologi ke Flutter dan NET Core 8. perbaikan ini akan mempertajam bagian rule bisnis sekaligus RBAC dan nest development akan menerapkan SSO menggunakkan Google LDAP</p>
-                <p>status: <span className="bg-orange-400 text-[10px] px-2 py-1 rounded">waiting approval migration</span></p>
-              </div>
-              },
-            ],
-            type: "review"
-          },
-          {
-            title: "Migrasi Teknologi & Arsitektur",
-            tech: [
-              {
-                label: "ASP.NET",
-                icon: <SiDotnet/>
-              },
-              {
-                label: "Mysql",
-                icon: <SiMysql/>
-              },
-              {
-                label: "Flutter",
-                icon: <SiFlutter/>
-              },
-              {
-                label: "Git",
-                icon: <SiGit/>
-              },
-              {
-                label: "Seq",
-                icon: null
-              },
-              {
-                label: "Docker",
-                icon: <SiDocker/>
-              },
-            ],
-            architecture: ["Clean Architecture","CQRS","DDD"],
-            link: ["https://github.com/adamf0/UnpakSipaksi","https://github.com/adamf0/sipaksi-mobile"],
-            type: "architecture",
-            position: "prototype"
-          },  
-        ]
-      },
-    },
-    {
-      id: 6,
-      title: "Siamida",
-      category: "Web",
-      tags: "Fullstack",
-      description: "SIAMIDA merupakan aplikasi untuk menangani masalah audit internal semua unit dan fakultas",
-      source:{
-        code: "Undocumented",
-        website: "https://siamida.unpak.ac.id/"
-      },
-      images: [
-        {
-          target: siamida_1,
-          placeholder: true
+              description: (
+                <div className="flex flex-col gap-2">
+                  <p>terjadi celah keamanan pada rule bisnis</p>
+                  <p>
+                    status:{" "}
+                    <span className="bg-green-400 text-[10px] px-2 py-1 rounded">
+                      open
+                    </span>
+                  </p>
+                </div>
+              ),
+            },
+          ],
+          type: "bug",
         },
         {
-          target: siamida_2,
+          title: "Review",
+          list: [
+            {
+              title: "Migrasi Teknologi",
+              description: (
+                <div className="flex flex-col gap-2">
+                  <p>
+                    dikarenakan perilaku pengguna lebih aktif menggunakan ponsel
+                    maka perlu migrasi teknologi ke Flutter dan NET Core 8.
+                    perbaikan ini akan mempertajam bagian rule bisnis sekaligus
+                    RBAC dan nest development akan menerapkan SSO menggunakkan
+                    Google LDAP
+                  </p>
+                  <p>
+                    status:{" "}
+                    <span className="bg-orange-400 text-[10px] px-2 py-1 rounded">
+                      waiting approval migration
+                    </span>
+                  </p>
+                </div>
+              ),
+            },
+          ],
+          type: "review",
+        },
+        {
+          title: "Migrasi Teknologi & Arsitektur",
+          tech: [
+            {
+              label: "ASP.NET",
+              icon: <SiDotnet />,
+            },
+            {
+              label: "Mysql",
+              icon: <SiMysql />,
+            },
+            {
+              label: "Flutter",
+              icon: <SiFlutter />,
+            },
+            {
+              label: "Git",
+              icon: <SiGit />,
+            },
+            {
+              label: "Seq",
+              icon: null,
+            },
+            {
+              label: "Docker",
+              icon: <SiDocker />,
+            },
+          ],
+          architecture: ["Clean Architecture", "CQRS", "DDD"],
+          link: [
+            "https://github.com/adamf0/UnpakSipaksi",
+            "https://github.com/adamf0/sipaksi-mobile",
+          ],
+          type: "architecture",
+          position: "prototype",
         },
       ],
-      details: {
-        Type: "Portofolio",
-        From: "PUTIK",
-        Teams: [
-          {
-            role: "Fullstack",
-            total: 1,
-            focus: true
-          },
-        ],
-        History:[
-          {
-            title: "Analisis Sistem",
-            images: [
-              siamida_alur
-            ],
-            type: null
-          },
-          {
-            title: "Inisialisasi Teknologi",
-            tech: [
-              {
-                label: "PHP",
-                icon: <SiPhp/>
-              },
-              {
-                label: "Laravel",
-                icon: <SiLaravel/>
-              },
-              {
-                label: "Mysql",
-                icon: <SiMysql/>
-              },
-              {
-                label: "Bootstrap",
-                icon: <SiBootstrap/>
-              },
-              {
-                label: "Javascript",
-                icon: <SiJavascript/>
-              },
-              {
-                label: "Git",
-                icon: <SiGit/>
-              },
-              {
-                label: "Rest Api",
-                icon: <AiFillApi />
-              },
-            ],
-            architecture: ["MVC"],
-            type: "architecture",
-            position: "current"
-          },
-          {
-            title: "Temuan / Bug",
-            list: [
-              {
+    },
+  },
+  {
+    id: 6,
+    title: "Siamida",
+    category: "Web",
+    tags: "Fullstack",
+    description:
+      "SIAMIDA merupakan aplikasi untuk menangani masalah audit internal semua unit dan fakultas",
+    source: {
+      code: "Undocumented",
+      website: "https://siamida.unpak.ac.id/",
+    },
+    images: [
+      {
+        target: siamida_1,
+        placeholder: true,
+      },
+      {
+        target: siamida_2,
+      },
+    ],
+    details: {
+      Type: "Portofolio",
+      From: "PUTIK",
+      Teams: [
+        {
+          role: "Fullstack",
+          total: 1,
+          focus: true,
+        },
+      ],
+      History: [
+        {
+          title: "Analisis Sistem",
+          images: [siamida_alur],
+          type: null,
+        },
+        {
+          title: "Inisialisasi Teknologi",
+          tech: [
+            {
+              label: "PHP",
+              icon: <SiPhp />,
+            },
+            {
+              label: "Laravel",
+              icon: <SiLaravel />,
+            },
+            {
+              label: "Mysql",
+              icon: <SiMysql />,
+            },
+            {
+              label: "Bootstrap",
+              icon: <SiBootstrap />,
+            },
+            {
+              label: "Javascript",
+              icon: <SiJavascript />,
+            },
+            {
+              label: "Git",
+              icon: <SiGit />,
+            },
+            {
+              label: "Rest Api",
+              icon: <AiFillApi />,
+            },
+          ],
+          architecture: ["MVC"],
+          type: "architecture",
+          position: "current",
+        },
+        {
+          title: "Temuan / Bug",
+          list: [
+            {
               title: "RCE Vuln",
-              description: <div className="flex flex-col gap-2">
-                <p>terjadi celah keamanan pada file upload</p>
-                <p>status: <span className="bg-red-400 text-[10px] px-2 py-1 rounded">close</span></p>
-              </div>
-              },
-              {
+              description: (
+                <div className="flex flex-col gap-2">
+                  <p>terjadi celah keamanan pada file upload</p>
+                  <p>
+                    status:{" "}
+                    <span className="bg-red-400 text-[10px] px-2 py-1 rounded">
+                      close
+                    </span>
+                  </p>
+                </div>
+              ),
+            },
+            {
               title: "IDOR Vuln",
-              description: <div className="flex flex-col gap-2">
-                <p>terjadi celah keamanan pada rule bisnis</p>
-                <p>status: <span className="bg-red-400 text-[10px] px-2 py-1 rounded">close</span></p>
-              </div>
-              },
-            ],
-            type: "bug"
-          },
-          {
-            title: "Review",
-            list: [
-              {
+              description: (
+                <div className="flex flex-col gap-2">
+                  <p>terjadi celah keamanan pada rule bisnis</p>
+                  <p>
+                    status:{" "}
+                    <span className="bg-red-400 text-[10px] px-2 py-1 rounded">
+                      close
+                    </span>
+                  </p>
+                </div>
+              ),
+            },
+          ],
+          type: "bug",
+        },
+        {
+          title: "Review",
+          list: [
+            {
               title: "Migrasi Teknologi",
-              description: <div className="flex flex-col gap-2">
-                <p>migrasi kode ke lebih ringan (Golang), memperkuat rule bisnis & RBAC, monitoring, logging & sistem recovery setelah insiden</p>
-                <p>status: <span className="bg-green-400 text-[10px] px-2 py-1 rounded">process migration</span></p>
-              </div>
-              },
-            ],
-            type: "review"
-          },
-          {
-            title: "Migrasi Teknologi & Architecture",
-            tech: [
-              {
-                label: "Golang",
-                icon: <SiGo/>
-              },
-              {
-                label: "Mysql",
-                icon: <SiMysql/>
-              },
-              {
-                label: "Tailwind",
-                icon: <SiTailwindcss/>
-              },
-              {
-                label: "React.JS",
-                icon: <SiReact/>
-              },
-              {
-                label: "Git",
-                icon: <SiGit/>
-              },
-              {
-                label: "Rest Api",
-                icon: <AiFillApi />
-              },
-            ],
-            architecture: ["Clean Architecture", "DDD", "CQRS"],
-            link: ["https://github.com/adamf0/UnpakSiamidaFrontend","https://github.com/adamf0/UnpakSiamidaV2"],
-            type: "architecture",
-            position: "prototype"
-          },
-        ]
-      },
-    },
-    {
-      id: 7,
-      title: "HR Portal",
-      category: "Web",
-      tags: "Fullstack",
-      description: "HRPORTAL merupakan aplikasi untuk menangani masalah absensi pegawai dan dosen",
-      source:{
-        code: "Undocumented",
-        website: "https://hrportal.unpak.ac.id/"
-      },
-      images: [
-        {
-          target: hrportal_1,
+              description: (
+                <div className="flex flex-col gap-2">
+                  <p>
+                    migrasi kode ke lebih ringan (Golang), memperkuat rule
+                    bisnis & RBAC, monitoring, logging & sistem recovery setelah
+                    insiden
+                  </p>
+                  <p>
+                    status:{" "}
+                    <span className="bg-green-400 text-[10px] px-2 py-1 rounded">
+                      process migration
+                    </span>
+                  </p>
+                </div>
+              ),
+            },
+          ],
+          type: "review",
         },
         {
-          target: hrportal_2,
-          placeholder: true
+          title: "Migrasi Teknologi & Architecture",
+          tech: [
+            {
+              label: "Golang",
+              icon: <SiGo />,
+            },
+            {
+              label: "Mysql",
+              icon: <SiMysql />,
+            },
+            {
+              label: "Tailwind",
+              icon: <SiTailwindcss />,
+            },
+            {
+              label: "React.JS",
+              icon: <SiReact />,
+            },
+            {
+              label: "Git",
+              icon: <SiGit />,
+            },
+            {
+              label: "Rest Api",
+              icon: <AiFillApi />,
+            },
+          ],
+          architecture: ["Clean Architecture", "DDD", "CQRS"],
+          link: [
+            "https://github.com/adamf0/UnpakSiamidaFrontend",
+            "https://github.com/adamf0/UnpakSiamidaV2",
+          ],
+          type: "architecture",
+          position: "prototype",
         },
       ],
-      details: {
-        Type: "Portofolio",
-        From: "PUTIK",
-        Teams: [
-          {
-            role: "Fullstack",
-            total: 1,
-            focus: true
-          },
-        ],
-        History:[
-          {
-            title: "Analisis Sistem",
-            images: [],
-            type: null
-          },
-          {
-            title: "Inisialisasi Teknologi",
-            tech: [
-              {
-                label: "PHP",
-                icon: <SiPhp/>
-              },
-              {
-                label: "Laravel",
-                icon: <SiLaravel/>
-              },
-              {
-                label: "Mysql",
-                icon: <SiMysql/>
-              },
-              {
-                label: "Bootstrap",
-                icon: <SiBootstrap/>
-              },
-              {
-                label: "Javascript",
-                icon: <SiJavascript/>
-              },
-              {
-                label: "Git",
-                icon: <SiGit/>
-              },
-              {
-                label: "Rest Api",
-                icon: <AiFillApi />
-              },
-            ],
-            architecture: ["MVC"],
-            type: "architecture",
-            position: "current"
-          },
-          {
-            title: "Temuan / Bug",
-            list: [],
-            type: "bug"
-          },
-          {
-            title: "Review",
-            list: [],
-            type: "review"
-          },
-        ]
-      },
     },
-    {
-      id: 8,
-      title: "Lapordiri-PPG",
-      category: "Web",
-      tags: "Fullstack",
-      description: "LAPORDIRI-PPG merupakan aplikasi untuk menangani masalah perekapan informasi dosen PPG",
-      source:{
-        code: "Undocumented",
-        website: "https://lapordiri-ppg.unpak.ac.id/"
+  },
+  {
+    id: 7,
+    title: "HR Portal",
+    category: "Web",
+    tags: "Fullstack",
+    description:
+      "HRPORTAL merupakan aplikasi untuk menangani masalah absensi pegawai dan dosen",
+    source: {
+      code: "Undocumented",
+      website: "https://hrportal.unpak.ac.id/",
+    },
+    images: [
+      {
+        target: hrportal_1,
       },
-      images: [
+      {
+        target: hrportal_2,
+        placeholder: true,
+      },
+    ],
+    details: {
+      Type: "Portofolio",
+      From: "PUTIK",
+      Teams: [
         {
-          target: laporppg_1,
-        },
-        {
-          target: laporppg_2,
-          placeholder: true
+          role: "Fullstack",
+          total: 1,
+          focus: true,
         },
       ],
-      details: {
-        Type: "Portofolio",
-        From: "PUTIK",
-        Teams: [
-          {
-            role: "Fullstack",
-            total: 1,
-            focus: true
-          },
-        ],
-        History:[
-          {
-            title: "Analisis Sistem",
-            images: [],
-            type: null
-          },
-          {
-            title: "Inisialisasi Teknologi",
-            tech: [
-              {
-                label: "PHP",
-                icon: <SiPhp/>
-              },
-              {
-                label: "Laravel",
-                icon: <SiLaravel/>
-              },
-              {
-                label: "Mysql",
-                icon: <SiMysql/>
-              },
-              {
-                label: "Tailwind",
-                icon: <SiTailwindcss/>
-              },
-              {
-                label: "React.JS",
-                icon: <SiReact/>
-              },
-              {
-                label: "Git",
-                icon: <SiGit/>
-              },
-              {
-                label: "Rest Api",
-                icon: <AiFillApi />
-              },
-            ],
-            architecture: ["MVC"],
-            type: "architecture",
-            position: "current"
-          },
-          {
-            title: "Temuan / Bug",
-            list: [],
-            type: "bug"
-          },
-          {
-            title: "Review",
-            list: [],
-            type: "review"
-          },
-        ]
-      },
-    },
-    {
-      id: 9,
-      title: "Timurjaya",
-      category: "Web",
-      tags: "Backend Web",
-      description: "Timurjaya merupakan aplikasi untuk menangani masalah service pada bengkel motor",
-      source:{
-        code: "Undocumented",
-        website: "Undocumented"
-      },
-      images: [
+      History: [
         {
-          target: NotFound,
-          placeholder: true
+          title: "Analisis Sistem",
+          images: [],
+          type: null,
+        },
+        {
+          title: "Inisialisasi Teknologi",
+          tech: [
+            {
+              label: "PHP",
+              icon: <SiPhp />,
+            },
+            {
+              label: "Laravel",
+              icon: <SiLaravel />,
+            },
+            {
+              label: "Mysql",
+              icon: <SiMysql />,
+            },
+            {
+              label: "Bootstrap",
+              icon: <SiBootstrap />,
+            },
+            {
+              label: "Javascript",
+              icon: <SiJavascript />,
+            },
+            {
+              label: "Git",
+              icon: <SiGit />,
+            },
+            {
+              label: "Rest Api",
+              icon: <AiFillApi />,
+            },
+          ],
+          architecture: ["MVC"],
+          type: "architecture",
+          position: "current",
+        },
+        {
+          title: "Temuan / Bug",
+          list: [],
+          type: "bug",
+        },
+        {
+          title: "Review",
+          list: [],
+          type: "review",
         },
       ],
-      details: {
-        Type: "Project",
-        From: "Private - Kenalan PT. Gilland Ganesha",
-        Teams: [
-          {
-            role: "Backend",
-            total: 1,
-            focus: true
-          },
-          {
-            role: "Fullstack",
-            total: 1,
-          },
-        ],
-        History:[
-          {
-            title: "Analisis Sistem",
-            images: [],
-            type: null
-          },
-          {
-            title: "Inisialisasi Teknologi",
-            tech: [
-              {
-                label: "Golang",
-                icon: <SiGoland/>
-              },
-              {
-                label: "Fiber",
-                icon: null
-              },
-              {
-                label: "Mysql",
-                icon: <SiMysql/>
-              },
-              {
-                label: "React",
-                icon: <SiReact/>
-              },
-              {
-                label: "Tailwind",
-                icon: <SiTailwindcss/>
-              },
-              {
-                label: "Git",
-                icon: <SiGit/>
-              },
-              {
-                label: "Rest Api",
-                icon: <AiFillApi />
-              },
-            ],
-            architecture: ["MVC"],
-            type: "architecture",
-            position: "current"
-          },
-          {
-            title: "Temuan / Bug",
-            list: [],
-            type: "bug"
-          },
-          {
-            title: "Review",
-            list: [],
-            type: "review"
-          },
-        ]
-      },
     },
-    {
-      id: 10,
-      title: "LaporMesin",
-      category: "Mobile",
-      tags: "Android",
-      description: "LaporMesin merupakan aplikasi untuk menangani pelaporan dan monitoring mesin pembuatan ban untuk PT. Indo Kordsa Tbk",
-      source:{
-        code: "Undocumented",
-        website: "Undocumented"
+  },
+  {
+    id: 8,
+    title: "Lapordiri-PPG",
+    category: "Web",
+    tags: "Fullstack",
+    description:
+      "LAPORDIRI-PPG merupakan aplikasi untuk menangani masalah perekapan informasi dosen PPG",
+    source: {
+      code: "Undocumented",
+      website: "https://lapordiri-ppg.unpak.ac.id/",
+    },
+    images: [
+      {
+        target: laporppg_1,
       },
-      showInShort:true,
-      images: [
+      {
+        target: laporppg_2,
+        placeholder: true,
+      },
+    ],
+    details: {
+      Type: "Portofolio",
+      From: "PUTIK",
+      Teams: [
         {
-          target: scanmesin_1,
-        },
-        {
-          target: scanmesin_2,
-        },
-        {
-          target: scanmesin_3,
-        },
-        {
-          target: scanmesin_4,
-          placeholder: true
-        },
-        {
-          target: scanmesin_5,
-        },
-        {
-          target: scanmesin_6,
-        },
-        {
-          target: scanmesin_7,
-        },
-        {
-          target: scanmesin_8,
-        },
-        {
-          target: scanmesin_9,
-        },
-        {
-          target: scanmesin_10,
-        },
-        {
-          target: scanmesin_11,
-        },
-        {
-          target: scanmesin_12,
-        },
-        {
-          target: scanmesin_13,
+          role: "Fullstack",
+          total: 1,
+          focus: true,
         },
       ],
-      details: {
-        Type: "Project",
-        From: "PT. Media Phonix Teknologi",
-        Teams: [
-          {
-            role: "Android",
-            total: 1,
-            focus: true
-          },
-          {
-            role: "Fullstack",
-            total: 1,
-          },
-        ],
-        History:[
-          {
-            title: "Analisis Sistem",
-            images: [
-              scanmesin_alur
-            ],
-            type: null
-          },
-          {
-            title: "Inisialisasi Teknologi",
-            tech: [
-              {
-                label: "Java",
-                icon: <SiAndroid/>
-              },
-              {
-                label: "AndroidStudio",
-                icon: <SiAndroidstudio/>
-              },
-              {
-                label: "Sqlite",
-                icon: <SiSqlite/>
-              }
-            ],
-            architecture: ["No Architecture"],
-            type: "architecture",
-            position: "current"
-          },
-          {
-            title: "Temuan / Bug",
-            list: [],
-            type: "bug"
-          },
-          {
-            title: "Review",
-            list: [],
-            type: "review"
-          },
-        ]
-      },
+      History: [
+        {
+          title: "Analisis Sistem",
+          images: [],
+          type: null,
+        },
+        {
+          title: "Inisialisasi Teknologi",
+          tech: [
+            {
+              label: "PHP",
+              icon: <SiPhp />,
+            },
+            {
+              label: "Laravel",
+              icon: <SiLaravel />,
+            },
+            {
+              label: "Mysql",
+              icon: <SiMysql />,
+            },
+            {
+              label: "Tailwind",
+              icon: <SiTailwindcss />,
+            },
+            {
+              label: "React.JS",
+              icon: <SiReact />,
+            },
+            {
+              label: "Git",
+              icon: <SiGit />,
+            },
+            {
+              label: "Rest Api",
+              icon: <AiFillApi />,
+            },
+          ],
+          architecture: ["MVC"],
+          type: "architecture",
+          position: "current",
+        },
+        {
+          title: "Temuan / Bug",
+          list: [],
+          type: "bug",
+        },
+        {
+          title: "Review",
+          list: [],
+          type: "review",
+        },
+      ],
     },
+  },
+  {
+    id: 9,
+    title: "Timurjaya",
+    category: "Web",
+    tags: "Backend Web",
+    description:
+      "Timurjaya merupakan aplikasi untuk menangani masalah service pada bengkel motor",
+    source: {
+      code: "Undocumented",
+      website: "Undocumented",
+    },
+    images: [
+      {
+        target: NotFound,
+        placeholder: true,
+      },
+    ],
+    details: {
+      Type: "Project",
+      From: "Private - Kenalan PT. Gilland Ganesha",
+      Teams: [
+        {
+          role: "Backend",
+          total: 1,
+          focus: true,
+        },
+        {
+          role: "Fullstack",
+          total: 1,
+        },
+      ],
+      History: [
+        {
+          title: "Analisis Sistem",
+          images: [],
+          type: null,
+        },
+        {
+          title: "Inisialisasi Teknologi",
+          tech: [
+            {
+              label: "Golang",
+              icon: <SiGoland />,
+            },
+            {
+              label: "Fiber",
+              icon: null,
+            },
+            {
+              label: "Mysql",
+              icon: <SiMysql />,
+            },
+            {
+              label: "React",
+              icon: <SiReact />,
+            },
+            {
+              label: "Tailwind",
+              icon: <SiTailwindcss />,
+            },
+            {
+              label: "Git",
+              icon: <SiGit />,
+            },
+            {
+              label: "Rest Api",
+              icon: <AiFillApi />,
+            },
+          ],
+          architecture: ["MVC"],
+          type: "architecture",
+          position: "current",
+        },
+        {
+          title: "Temuan / Bug",
+          list: [],
+          type: "bug",
+        },
+        {
+          title: "Review",
+          list: [],
+          type: "review",
+        },
+      ],
+    },
+  },
+  {
+    id: 10,
+    title: "LaporMesin",
+    category: "Mobile",
+    tags: "Android",
+    description:
+      "LaporMesin merupakan aplikasi untuk menangani pelaporan dan monitoring mesin pembuatan ban untuk PT. Indo Kordsa Tbk",
+    source: {
+      code: "Undocumented",
+      website: "Undocumented",
+    },
+    showInShort: true,
+    images: [
+      {
+        target: scanmesin_1,
+      },
+      {
+        target: scanmesin_2,
+      },
+      {
+        target: scanmesin_3,
+      },
+      {
+        target: scanmesin_4,
+        placeholder: true,
+      },
+      {
+        target: scanmesin_5,
+      },
+      {
+        target: scanmesin_6,
+      },
+      {
+        target: scanmesin_7,
+      },
+      {
+        target: scanmesin_8,
+      },
+      {
+        target: scanmesin_9,
+      },
+      {
+        target: scanmesin_10,
+      },
+      {
+        target: scanmesin_11,
+      },
+      {
+        target: scanmesin_12,
+      },
+      {
+        target: scanmesin_13,
+      },
+    ],
+    details: {
+      Type: "Project",
+      From: "PT. Media Phonix Teknologi",
+      Teams: [
+        {
+          role: "Android",
+          total: 1,
+          focus: true,
+        },
+        {
+          role: "Fullstack",
+          total: 1,
+        },
+      ],
+      History: [
+        {
+          title: "Analisis Sistem",
+          images: [scanmesin_alur],
+          type: null,
+        },
+        {
+          title: "Inisialisasi Teknologi",
+          tech: [
+            {
+              label: "Java",
+              icon: <SiAndroid />,
+            },
+            {
+              label: "AndroidStudio",
+              icon: <SiAndroidstudio />,
+            },
+            {
+              label: "Sqlite",
+              icon: <SiSqlite />,
+            },
+          ],
+          architecture: ["No Architecture"],
+          type: "architecture",
+          position: "current",
+        },
+        {
+          title: "Temuan / Bug",
+          list: [],
+          type: "bug",
+        },
+        {
+          title: "Review",
+          list: [],
+          type: "review",
+        },
+      ],
+    },
+  },
+  {
+    id: 11,
+    title: "Simonev",
+    category: "Web",
+    tags: "Fullstack",
+    description: "Simonev merupakan aplikasi untuk menangani masalah kuesioner",
+    source: {
+      // code: "https://github.com/adamf0/UnpakSipaksiOld",
+      website: "http://simonev-lpm.unpak.ac.id/",
+    },
+    images: [
+      {
+        target: simonev_1,
+        placeholder: true,
+      },
+      {
+        target: simonev_2,
+      },
+    ],
+    details: {
+      Type: "Portofolio",
+      From: "PUTIK",
+      Teams: [
+        {
+          role: "Fullstack",
+          total: 1,
+          focus: true,
+        },
+      ],
+      History: [
+        {
+          title: "Analisis Sistem",
+          images: [
+            // simonev_alur
+          ],
+          type: null,
+        },
+        {
+          title: "Inisialisasi Teknologi",
+          tech: [
+            {
+              label: "PHP",
+              icon: <SiPhp />,
+            },
+            {
+              label: "Laravel",
+              icon: <SiLaravel />,
+            },
+            {
+              label: "Mysql",
+              icon: <SiMysql />,
+            },
+            {
+              label: "Bootstrap",
+              icon: <SiBootstrap />,
+            },
+            {
+              label: "Javascript",
+              icon: <SiJavascript />,
+            },
+            {
+              label: "Git",
+              icon: <SiGit />,
+            },
+            {
+              label: "Rest Api",
+              icon: <AiFillApi />,
+            },
+          ],
+          architecture: ["MVC"],
+          type: "architecture",
+          position: "current",
+        },
+        {
+          title: "Temuan / Bug",
+          list: [
+            {
+              title: "Out Of Memory",
+              description: (
+                <div className="flex flex-col gap-2">
+                  <p>terjadi kebocoran memory pada proses build report</p>
+                  <p>
+                    status:{" "}
+                    <span className="bg-green-400 text-[10px] px-2 py-1 rounded">
+                      open
+                    </span>
+                  </p>
+                </div>
+              ),
+            },
+            {
+              title: "IDOR Vuln",
+              description: (
+                <div className="flex flex-col gap-2">
+                  <p>terjadi celah keamanan pada rule bisnis</p>
+                  <p>
+                    status:{" "}
+                    <span className="bg-green-400 text-[10px] px-2 py-1 rounded">
+                      open
+                    </span>
+                  </p>
+                </div>
+              ),
+            },
+          ],
+          type: "bug",
+        },
+        {
+          title: "Review",
+          list: [
+            {
+              title: "Migrasi Teknologi",
+              description: (
+                <div className="flex flex-col gap-2">
+                  <ul className="list-decimal px-3">
+                    <li>
+                      dikarenakan spesifikasi server tidak mumpuni developer
+                      memindahkan beban report ke client meskipun secara UX itu
+                      tidak bagus
+                    </li>
+                    <li>
+                      selain pemindahan state flow report, developer melakukan
+                      perapihan source code dan pengujian kode internal dengan
+                      menerapkan test (TDD, ATDD, FDD) agar terdokumentasi
+                    </li>
+                  </ul>
+                  <p>
+                    status:{" "}
+                    <span className="bg-orange-400 text-[10px] px-2 py-1 rounded">
+                      process migration
+                    </span>
+                  </p>
+                </div>
+              ),
+            },
+          ],
+          type: "review",
+        },
+        {
+          title: "Migrasi Teknologi & Arsitektur",
+          tech: [
+            {
+              label: "Next",
+              icon: <SiNextdotjs />,
+            },
+            {
+              label: "Mysql",
+              icon: <SiMysql />,
+            },
+            {
+              label: "Golang",
+              icon: <SiGo />,
+            },
+            {
+              label: "Git",
+              icon: <SiGit />,
+            },
+            {
+              label: "Docker",
+              icon: <SiDocker />,
+            },
+          ],
+          architecture: ["Clean Architecture", "CQRS", "DDD", "Atomic Pattern"],
+          link: [
+            "https://adamf0.github.io/unpaksimonevfrontv2",
+            "https://adamf0.github.io/unpaksimonevfrontv2/coverage/index.html",
+            "https://github.com/adamf0/unpaksimonevfrontv2",
+            "https://github.com/adamf0/UnpakSimonevV2",
+          ],
+          type: "architecture",
+          position: "implementation",
+        },
+        {
+          title: "Result",
+          images: [
+            simonev_new_1,
+            simonev_new_2,
+            simonev_new_3,
+            simonev_new_4,
+            simonev_new_5,
+            simonev_new_6,
+          ],
+          type: null,
+        },
+      ],
+    },
+  },
 ];
 
-function getArchitecture(title){
+function getArchitecture(title) {
   if (!title) return null;
-  return architecture.find(target => target.title === title);
-};
+  return architecture.find((target) => target.title === title);
+}
 
 export default { projects, getArchitecture };
