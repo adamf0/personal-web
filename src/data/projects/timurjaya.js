@@ -13,7 +13,7 @@ export const timurjayaProject = {
   ],
   details: {
     Type: "Project",
-    From: "Private - Kenalan PT. Gilland Ganesha",
+    From: "Personal",
     Teams: [
       { role: "Backend", total: 1, focus: true },
       { role: "Fullstack", total: 1 },
